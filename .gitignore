@@ -1,3 +1,16 @@
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Node modules
+node_modules
+
+# Ignore all folders in apps that do not start with build-*
+apps/* 
+!apps/build-*
+
 # Logs
 logs
 *.log
