@@ -1,0 +1,3 @@
+[submodule "apps/connoraleksfrontend"]
+	path = apps/connoraleksfrontend
+	url = https://github.com/connoraleks/connoraleks.com-frontend.git
