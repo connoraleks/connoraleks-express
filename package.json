@@ -10,7 +10,7 @@
     "update-all": "npm run update-base && npm run update-frontend && npm run update-aisearch",
     "build-frontend": "npm run update-frontend && cd apps/connoraleksfrontend && npm run build && mv build build-connoraleksfrontend && rm -rf ../build-connoraleksfrontend && mv build-connoraleksfrontend ../ && cd ../..",
     "build-aisearch": "npm run update-aisearch && cd apps/aisearch && npm run build && mv build build-aisearch && rm -rf ../build-aisearch && mv build-aisearch ../ && cd ../..",
-    "build-base": "npm run update-base && npm run build-frontend && npm run build-aisearch",
+    "build-all": "npm run update-base && npm run build-frontend && npm run build-aisearch",
     "start-frontend": "cd apps/connoraleksfrontend && npm start && cd ../..",
     "start-aisearch": "cd apps/aisearch && npm start && cd ../.."
   },
