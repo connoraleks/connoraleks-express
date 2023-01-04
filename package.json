@@ -4,15 +4,15 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "update-frontend": "cd apps/connoraleksfrontend && npm update && npm upgrade -y && cd ../..",
-    "update-aisearch": "cd apps/aisearch && npm update && npm upgrade -y && cd ../..",
-    "update-base": "npm update && npm upgrade -y",
-    "update-all": "npm run update-base && npm run update-frontend && npm run update-aisearch",
-    "build-frontend": "npm run update-frontend && cd apps/connoraleksfrontend && npm run build && mv build build-connoraleksfrontend && rm -rf ../build-connoraleksfrontend && mv build-connoraleksfrontend ../ && cd ../..",
-    "build-aisearch": "npm run update-aisearch && cd apps/aisearch && npm run build && mv build build-aisearch && rm -rf ../build-aisearch && mv build-aisearch ../ && cd ../..",
-    "build-all": "npm run update-base && npm run build-frontend && npm run build-aisearch",
-    "start-frontend": "cd apps/connoraleksfrontend && npm start && cd ../..",
-    "start-aisearch": "cd apps/aisearch && npm start && cd ../.."
+    "upgrade-frontend": "cd apps/connoraleksfrontend && yarn upgrade && cd ../..",
+    "upgrade-aisearch": "cd apps/aisearch && yarn upgrade && cd ../..",
+    "upgrade-base": "yarn upgrade ",
+    "upgrade-all": "yarn run upgrade-base && yarn run upgrade-frontend && yarn run upgrade-aisearch",
+    "build-frontend": "yarn run upgrade-frontend && cd apps/connoraleksfrontend && yarn run build && mv build build-connoraleksfrontend && rm -rf ../build-connoraleksfrontend && mv build-connoraleksfrontend ../ && cd ../..",
+    "build-aisearch": "yarn run upgrade-aisearch && cd apps/aisearch && yarn run build && mv build build-aisearch && rm -rf ../build-aisearch && mv build-aisearch ../ && cd ../..",
+    "build-all": "yarn run upgrade-base && yarn run build-frontend && yarn run build-aisearch",
+    "start-frontend": "cd apps/connoraleksfrontend && yarn start && cd ../..",
+    "start-aisearch": "cd apps/aisearch && yarn start && cd ../.."
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
